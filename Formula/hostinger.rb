@@ -5,13 +5,13 @@
 class Hostinger < Formula
   desc "Hostinger API CLI"
   homepage "https://www.hostinger.com"
-  version "4.5.1"
+  version "4.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hostinger/api-cli/releases/download/v4.5.1/hostinger-4.5.1-darwin-amd64.tar.gz"
-      sha256 "0f286a4e41b68e18509668affaa2746679cf626c58d733f37f086a2189b6bebc"
+      url "https://github.com/hostinger/api-cli/releases/download/v4.6.0/hostinger-4.6.0-darwin-amd64.tar.gz"
+      sha256 "9b51d111a4eef489e61cd9b47d6d27fceb3e68aff3f959e7d195ad07c7cf761d"
 
       define_method(:install) do
         bin.install "hostinger"
@@ -22,8 +22,8 @@ class Hostinger < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hostinger/api-cli/releases/download/v4.5.1/hostinger-4.5.1-darwin-arm64.tar.gz"
-      sha256 "a8ca3666239e16898f085a9e4bbc70a245a9966903d584d766e5a69d822ac2ec"
+      url "https://github.com/hostinger/api-cli/releases/download/v4.6.0/hostinger-4.6.0-darwin-arm64.tar.gz"
+      sha256 "c9e94f4e9294e67c196455d4564a895c19ccc81937f8ae98812b11ed1226daa5"
 
       define_method(:install) do
         bin.install "hostinger"
@@ -37,8 +37,8 @@ class Hostinger < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hostinger/api-cli/releases/download/v4.5.1/hostinger-4.5.1-linux-amd64.tar.gz"
-      sha256 "b5c8d9adb702ab7b1c6054c56eb5dfe0e9b533726b8096d45aa2253e203c5257"
+      url "https://github.com/hostinger/api-cli/releases/download/v4.6.0/hostinger-4.6.0-linux-amd64.tar.gz"
+      sha256 "e32923ca6e59c288177807f4a4816327182e34cb4a3e6fa28fbb2f3bb428a469"
       define_method(:install) do
         bin.install "hostinger"
         bash_completion.install "completions/hostinger.bash" => "hostinger"
@@ -48,8 +48,8 @@ class Hostinger < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hostinger/api-cli/releases/download/v4.5.1/hostinger-4.5.1-linux-arm64.tar.gz"
-      sha256 "9a8dd656e4eaeb76ca9a0b014633ca6f79d9522fecaf562ed0dbf0586f21fa99"
+      url "https://github.com/hostinger/api-cli/releases/download/v4.6.0/hostinger-4.6.0-linux-arm64.tar.gz"
+      sha256 "38e46785da66044894fcf290c415a1038ca41f897055e9d37119cf2dc226f97c"
       define_method(:install) do
         bin.install "hostinger"
         bash_completion.install "completions/hostinger.bash" => "hostinger"
