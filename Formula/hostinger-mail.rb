@@ -5,13 +5,13 @@
 class HostingerMail < Formula
   desc "Hostinger Mail API CLI"
   homepage "https://www.hostinger.com"
-  version "1.5.0"
+  version "1.5.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hostinger/mail-api-cli/releases/download/v1.5.0/hostinger-mail-1.5.0-darwin-amd64.tar.gz"
-      sha256 "7d5e758236af5a5e625101194729eda05f51f5da8693aa360d86806dedc9f70a"
+      url "https://github.com/hostinger/mail-api-cli/releases/download/v1.5.1/hostinger-mail-1.5.1-darwin-amd64.tar.gz"
+      sha256 "17a5b37931603b4b69e27c307b64c8308c66384a24c04d2a386ba255565d71d5"
 
       define_method(:install) do
         bin.install "hostinger-mail"
@@ -22,8 +22,8 @@ class HostingerMail < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hostinger/mail-api-cli/releases/download/v1.5.0/hostinger-mail-1.5.0-darwin-arm64.tar.gz"
-      sha256 "9a5df24d6ca1711854510a74d3a2bb9765776cdc33294fb11049010fba797a3f"
+      url "https://github.com/hostinger/mail-api-cli/releases/download/v1.5.1/hostinger-mail-1.5.1-darwin-arm64.tar.gz"
+      sha256 "4651e2c542fdeb144f95c8edcfc23999abd8e67a32ce1c8a58650b1457a246ee"
 
       define_method(:install) do
         bin.install "hostinger-mail"
@@ -37,8 +37,8 @@ class HostingerMail < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hostinger/mail-api-cli/releases/download/v1.5.0/hostinger-mail-1.5.0-linux-amd64.tar.gz"
-      sha256 "61d284c955a4afe56bad8b9c6c05e16a547f630c1bd04438802c97f8edf117ec"
+      url "https://github.com/hostinger/mail-api-cli/releases/download/v1.5.1/hostinger-mail-1.5.1-linux-amd64.tar.gz"
+      sha256 "5f6a6c9366d4bac994ea044fe4ccf41184e2b247452656bd7d3e266ea3441439"
       define_method(:install) do
         bin.install "hostinger-mail"
         bash_completion.install "completions/hostinger-mail.bash" => "hostinger-mail"
@@ -48,8 +48,8 @@ class HostingerMail < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hostinger/mail-api-cli/releases/download/v1.5.0/hostinger-mail-1.5.0-linux-arm64.tar.gz"
-      sha256 "75abf53d2e1006c90466312bb27aa108ddb3182d807f7a33da49147a9f9ddcd4"
+      url "https://github.com/hostinger/mail-api-cli/releases/download/v1.5.1/hostinger-mail-1.5.1-linux-arm64.tar.gz"
+      sha256 "7babac78c106d0af868fa2821ce8f69bd876c3808a8c011635de85c1f500bc64"
       define_method(:install) do
         bin.install "hostinger-mail"
         bash_completion.install "completions/hostinger-mail.bash" => "hostinger-mail"
